@@ -1,0 +1,23 @@
+.Navigation-container {
+    background-color: #212121;
+    color: #f8f8f8;
+    border: 1px solid pink;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigation-left {
+    border: 1px solid yellow;
+}
+
+.Navigation-right {
+    border: 1px solid yellow;
+}
+
+.Navigation-right ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    border: 1px solid white;
+}

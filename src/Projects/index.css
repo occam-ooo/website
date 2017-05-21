@@ -1,0 +1,16 @@
+.Projects-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+    padding: 5%;
+}
+
+.Projects-container .item {
+    margin-top: 20%;
+}
+
+.Projects-container .ui.items > .item > .image > img {
+    border-radius: 5rem;
+}
