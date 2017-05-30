@@ -1,16 +1,24 @@
 .Projects-container {
-    display: flex;
-    min-height: 100vh;
-    background-color: #f8f8f8;
-    justify-content: space-around;
-    /*border: 1px solid black;*/
-    padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  /*border: 1px solid black;*/
+  padding: 5%;
+  background-color: #f8f8f8;
 }
 
-.Projects-container .item {
-    margin-top: 20%;
+.Projects-container .ui.items > .item {
+  padding: 2%;
+  background-color: #ffffff;
+  font-size: 1em;
+}
+
+.Projects-container .ui.items > .item > .content > .header:not(.ui) {
+  color: #222222;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .Projects-container .ui.items > .item > .image > img {
-    border-radius: 5rem;
+  border-radius: 5rem;
 }

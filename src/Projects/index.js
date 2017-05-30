@@ -9,14 +9,9 @@ export default class Projects extends Component {
     render() {
         return (
             <div className="Projects-container">
-
                 <Item.Group>
                     <Item>
-                        <Item.Image
-                            className="Projects-item-image"
-                            size="tiny"
-                            src={nu}
-                        />
+                        <Item.Image className="Projects-item-image" size="tiny" src={nu} />
 
                         <Item.Content>
                             <Item.Header as="a">
@@ -28,19 +23,15 @@ export default class Projects extends Component {
                                 <Icon name="android" size="large" />
                             </Item.Meta>
                             <Item.Description>
-                                (c) Occam
+                                Nu is a mobile app that gives you events in the best places of your city, for the same day. Every day, you are able to see what's going on.
                             </Item.Description>
-                            <Item.Extra>Own Project. (c) Occam.</Item.Extra>
+                            <Item.Extra>Own Project. (c) <a href="https://occam.ooo">Occam.ooo</a></Item.Extra>
                         </Item.Content>
                     </Item>
 
                     <Item>
 
-                        <Item.Image
-                            className="Projects-item-image"
-                            size="tiny"
-                            src={withdipp}
-                        />
+                        <Item.Image className="Projects-item-image" size="tiny" src={withdipp} />
 
                         <Item.Content>
                             <Item.Header as="a">
@@ -69,11 +60,7 @@ export default class Projects extends Component {
                     </Item>
 
                     <Item>
-                        <Item.Image
-                            className="Projects-item-image"
-                            size="tiny"
-                            src={remy}
-                        />
+                        <Item.Image className="Projects-item-image" size="tiny" src={remy} />
                         <Item.Content>
                             <Item.Header as="a">
                                 Remy – Your Restaurant Assistant
