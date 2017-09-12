@@ -1,9 +1,11 @@
-{
+module.exports = {
   parser: 'babel-eslint',
-  extends: [],
-  plugins: [],
+  extends: ['airbnb'],
+  plugins: ['react'],
   globals: { fetch: false },
   rules: {
+    'comma-dangle': ['error', 'never'],
+    'react/jsx-indent': [2, 2]
   },
   parserOptions: {
     ecmaFeatures: {
@@ -18,4 +20,4 @@
     node: true,
     jest: true
   }
-}
+};
