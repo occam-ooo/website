@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Icon } from 'semantic-ui-react';
+import { Icon, Menu } from 'semantic-ui-react';
 import {
   ROUTE_ROOT,
   ROUTE_ABOUT,
@@ -9,21 +9,21 @@ import {
 import './index.css';
 
 const Header = () => (
-  <div className="Navigation-container">
-    <div className="Navigation-left">
+  <div className="Header-container">
+    <Menu inverted pointing secondary>
+      <Link to={ROUTE_ROOT}>
+        <Menu.Item name="home" active onClick={() => {}} />
+      </Link>
+      <Link to={ROUTE_PROJECTS}>
+        <Menu.Item name="Projects" />
+      </Link>
+      <Link to={ROUTE_ABOUT}>
+        <Menu.Item name="About" />
+      </Link>
+      <Menu.Item name="home" onClick={() => {}} />
+    </Menu>
+    <div className="Header-left">
       <Icon name="github square" />
-    </div>
-    <div className="Navigation-right">
-      <ul>
-        <li>
-          <Link to={ROUTE_ROOT}>Home</Link>
-        </li>
-        <li>
-          <Link to={ROUTE_ABOUT}>Projects</Link>
-        </li>
-        <Link to={ROUTE_PROJECTS}>About</Link>
-        <li>Contact</li>
-      </ul>
     </div>
   </div>
 );

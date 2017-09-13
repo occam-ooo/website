@@ -1,23 +1,23 @@
-.Navigation-container {
-    background-color: #212121;
-    color: #f8f8f8;
-    border: 1px solid pink;
-    display: flex;
-    justify-content: space-between;
+.Header-container {
+  background-color: #212121;
+  color: #f8f8f8;
+  border: 1px solid pink;
+  display: flex;
+  justify-content: space-between;
 }
 
-.Navigation-left {
-    border: 1px solid yellow;
+.Header-left {
+  border: 1px solid yellow;
 }
 
-.Navigation-right {
-    border: 1px solid yellow;
+.Header-right {
+  border: 1px solid yellow;
 }
 
-.Navigation-right ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
-    border: 1px solid white;
+.Header-right ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  border: 1px solid white;
 }

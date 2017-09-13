@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item, Icon } from 'semantic-ui-react';
+import { Item, Icon, Header as SemanticHeader } from 'semantic-ui-react';
 import Header from '../../components/Header';
 import './index.css';
 
@@ -12,10 +12,16 @@ const Projects = () => (
       <Item.Group>
         {data.map(project => (
           <Item key={`project-${project.id}`}>
-            <Item.Image className="Projects-item-image" size="tiny" src={project.image} />
+            <Item.Image
+              className="Projects-item-image"
+              size="tiny"
+              src={project.image}
+            />
 
             <Item.Content>
-              <Item.Header as="a">{project.header}</Item.Header>
+              <Item.Header as="a">
+                <SemanticHeader as="h2">{project.header}</SemanticHeader>
+              </Item.Header>
 
               {project.icons.map(icon => (
                 <Item.Meta key={`icon-${icon.id}`}>
@@ -25,7 +31,9 @@ const Projects = () => (
                 </Item.Meta>
               ))}
 
-              <Item.Description>{project.description}</Item.Description>
+              <Item.Description>
+                <p>{project.description}</p>
+              </Item.Description>
               <Item.Extra>
                 {project.owner} <a href={project.url}>{project.urlName}</a>
               </Item.Extra>
