@@ -8,19 +8,26 @@ import {
 } from '../../services/navigation/routes';
 import './index.css';
 
-const Header = () => (
+const Header = ({ ...props }) => (
   <div className="Header-container">
-    <Menu inverted pointing secondary>
+    <Menu inverted pointing secondary stackable>
       <Link to={ROUTE_ROOT}>
-        <Menu.Item name="home" active onClick={() => {}} />
+        <Menu.Item
+          name="home"
+          active={ROUTE_ROOT === props.match.path}
+          onClick={() => {}}
+        />
       </Link>
       <Link to={ROUTE_PROJECTS}>
-        <Menu.Item name="Projects" />
+        <Menu.Item
+          name="Projects"
+          active={ROUTE_PROJECTS === props.match.path}
+        />
       </Link>
       <Link to={ROUTE_ABOUT}>
-        <Menu.Item name="About" />
+        <Menu.Item name="About" active={ROUTE_ABOUT === props.match.path} />
       </Link>
-      <Menu.Item name="home" onClick={() => {}} />
+      <Menu.Item name="Contact" onClick={() => {}} />
     </Menu>
     <div className="Header-left">
       <Icon name="github square" />

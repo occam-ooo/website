@@ -5,9 +5,9 @@ import './index.css';
 
 import data from './data.Projects';
 
-const Projects = () => (
+const Projects = ({ ...props }) => (
   <div>
-    <Header />
+    <Header {...props} />
     <div className="Projects-container">
       <Item.Group>
         {data.map(project => (

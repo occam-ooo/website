@@ -4,9 +4,9 @@ import './index.css';
 
 import logo from './logo.svg';
 
-const Root = () => (
+const Root = ({ ...props }) => (
   <div>
-    <Header />
+    <Header {...props} />
     <div className="Root-container">
       <div className="Root-logo-container">
         <div className="Root-logo">
