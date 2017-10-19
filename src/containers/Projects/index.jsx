@@ -23,13 +23,15 @@ const Projects = ({ ...props }) => (
                 <SemanticHeader as="h2">{project.header}</SemanticHeader>
               </Item.Header>
 
-              {project.icons.map(icon => (
-                <Item.Meta key={`icon-${icon.id}`}>
-                  <a href={icon.url}>
-                    <Icon name={icon.type} size="large" />
-                  </a>
-                </Item.Meta>
-              ))}
+              <div className="Projects-icons">
+                {project.icons.map(icon => (
+                  <Item.Meta key={`icon-${icon.id}`}>
+                    <a href={icon.url}>
+                      <Icon name={icon.type} size="large" />
+                    </a>
+                  </Item.Meta>
+                ))}
+              </div>
 
               <Item.Description>
                 <p>{project.description}</p>

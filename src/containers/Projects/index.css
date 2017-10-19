@@ -22,3 +22,7 @@
 .Projects-container .ui.items > .item > .image > img {
   border-radius: 5rem;
 }
+
+.Projects-icons {
+  display: flex;
+}
