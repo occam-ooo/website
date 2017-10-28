@@ -5,7 +5,7 @@ import { ROUTE_ROOT, ROUTE_ABOUT, ROUTE_PROJECTS } from '../../services/navigati
 import './index.css';
 
 const CustomHeader = ({ ...props }) => (
-  <Container>
+  <Container className="Header-container">
     <Menu inverted pointing secondary stackable>
       <Link to={ROUTE_ROOT}>
         <Menu.Item name="home" active={ROUTE_ROOT === props.match.path} onClick={() => {}} />
@@ -16,7 +16,7 @@ const CustomHeader = ({ ...props }) => (
       <Link to={ROUTE_ABOUT}>
         <Menu.Item name="About" active={ROUTE_ABOUT === props.match.path} />
       </Link>
-      <Menu.Item name="Contact" onClick={() => {}} />
+      <Menu.Item name="Contact" onClick={() => window.scrollTo(0, document.body.scrollHeight)} />
     </Menu>
   </Container>
 );

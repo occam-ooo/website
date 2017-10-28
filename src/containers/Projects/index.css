@@ -7,12 +7,6 @@
   background-color: #f8f8f8;
 }
 
-.Projects-container .ui.items > .item {
-  padding: 2%;
-  background-color: #ffffff;
-  font-size: 1em;
-}
-
 .Projects-container .ui.items > .item > .content > .header:not(.ui) {
   color: #222222;
   font-size: 1.5rem;

@@ -1,9 +1,10 @@
-.Header-container {
+.ui.container.Header-container {
   background-color: #212121;
   color: #f8f8f8;
-  border: 1px solid pink;
+  /*border: 1px solid pink;*/
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .Header-left {

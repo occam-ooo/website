@@ -1,5 +1,17 @@
 .About-container .content {
-  background-color: #fff;
-  margin-top: 14px;
-  padding: 2%;
+    margin-bottom: 46px;
+    border-radius: 4px;
+    padding: 4%;
+    text-align: initial;
+}
+
+.About-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    padding: 5%;
+    background-color: #f8f8f8;
 }

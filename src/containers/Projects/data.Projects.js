@@ -1,11 +1,28 @@
 import nu from './nu.png';
 import withdipp from './withdipp.jpg';
 import remy from './remy.png';
+import kbo from './kbo.png';
 
 const data = [
   {
-    image: nu,
+    image: kbo,
     id: 1,
+    header: 'Karnov Business Optimizer',
+    icons: [
+      {
+        type: 'world',
+        id: 11,
+        url: 'https://www.karnovgroup.dk/loesninger/kbo-omraade'
+      }
+    ],
+    description: "Better business decisions based on visualization of the company's finances.",
+    owner: 'Customer Project. (c)',
+    url: 'https://www.karnovgroup.dk/',
+    urlName: 'Karnov Group A/S'
+  },
+  {
+    image: nu,
+    id: 2,
     header: 'Nu - Events. Today.',
     icons: [
       {
@@ -24,15 +41,14 @@ const data = [
         url: 'https://play.google.com/store/apps/details?id=com.occam.mobile.android.nu&hl=en'
       }
     ],
-    description:
-      "Nu is a mobile app that gives you events in the best places of your city, for the same day. Every day, you are able to see what's going on.",
+    description: "Nu is a mobile app that gives you events in the best places of your city, for the same day. Every day, you are able to see what's going on.",
     owner: 'Own Project. (c)',
     url: 'https://occam.ooo',
     urlName: 'Occam.ooo'
   },
   {
     image: withdipp,
-    id: 2,
+    id: 3,
     header: 'with dipp',
 
     icons: [
@@ -47,15 +63,14 @@ const data = [
         url: 'https://play.google.com/store/apps/details?id=com.withdipp'
       }
     ],
-    description:
-      'Dipp is an engaging way to light up that travel bug in all of us. With a gallery of trending travels coming from your friends and favorite bloggers’ social media feeds around the world, you have the most trusted resources to find your next vacation spot or have a blast where you are.',
+    description: 'Dipp is an engaging way to light up that travel bug in all of us. With a gallery of trending travels coming from your friends and favorite bloggers’ social media feeds around the world, you have the most trusted resources to find your next vacation spot or have a blast where you are.',
     owner: 'Customer Project. (c)',
     url: 'http://withdipp.com/',
     urlName: 'withdipp'
   },
   {
     image: remy,
-    id: 3,
+    id: 4,
     header: ' Remy – Your Restaurant Assistant',
 
     icons: [
@@ -65,8 +80,7 @@ const data = [
         url: 'https://mobilabsolutions.com/remy-your-restaurant-assistant/'
       }
     ],
-    description:
-      'Remy is an iOS Application which aims to provide restaurant owners deep insights into their online competition environment and to improve their online presence.',
+    description: 'Remy is an iOS Application which aims to provide restaurant owners deep insights into their online competition environment and to improve their online presence.',
     owner: 'Customer Project. (c)',
     url: 'https://mobilabsolutions.com/',
     urlName: 'Mobilab solutions'

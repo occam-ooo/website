@@ -1,15 +1,15 @@
 .Root-container {
-  display: flex;
+/*  display: flex;
+  align-items: center;*/
+  background-color: #212121;
+/*  justify-content: center;
   min-height: 100vh;
-  border: 1px solid black;
-  /*background-color: #212121;*/
-  justify-content: center;
-  align-items: center;
+  border: 1px solid black;*/
 }
 
 .Root-logo-container {
-  border: 1px solid black;
   align-self: center;
+  border: 1px solid black;
 }
 
 .Root-logo {
@@ -19,9 +19,24 @@
 }
 
 .Root-slogan {
+  margin-top: 10px;
   color: #f8f8f8;
-  text-align: center;
   font-size: 2rem;
   font-weight: 300;
-  margin-top: 10px;
+  text-align: center;
+}
+
+.ui.parallax-2 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: right;
+}
+
+.ui.text.container {
+  text-align: center;
+  padding: 100px;
+}
+
+.parallax-2-content .react-parallax-content {
+    background-color: rgba(0,0,0,0.6);
 }
