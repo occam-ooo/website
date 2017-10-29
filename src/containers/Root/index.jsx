@@ -42,11 +42,12 @@ export default class Home extends Component {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-evenly',
-                  height: '100vh'
+                  height: '100vh',
+                  alignItems: 'center'
                 }}
               >
 
-                <Image src={logo} centered verticalAlign="bottom" size="medium" />
+                <img src={logo} centered verticalAlign="bottom" size="medium" />
 
                 <Header
                   as="h1"
