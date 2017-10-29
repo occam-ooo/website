@@ -6,7 +6,7 @@ import './index.css';
 
 const CustomHeader = ({ ...props }) => (
   <Container className="Header-container">
-    <Menu inverted pointing secondary stackable>
+    <Menu inverted pointing secondary>
       <Link to={ROUTE_ROOT}>
         <Menu.Item name="home" active={ROUTE_ROOT === props.match.path} onClick={() => {}} />
       </Link>
