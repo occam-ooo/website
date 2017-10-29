@@ -1,6 +1,6 @@
 {
-  "name": "occam-ooo-website",
   "homepage": "https://occam-ooo.github.io/website",
+  "name": "occam-ooo-website",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
