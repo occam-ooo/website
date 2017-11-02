@@ -25,6 +25,7 @@ const Footer = () => (
               <List.Item>Vesterbrogade 26</List.Item>
               <List.Item>1620 Copenhagen V</List.Item>
               <List.Item>Denmark <Flag name="denmark" /></List.Item>
+              <List.Item>CVR 35128727</List.Item>
               <List.Item as="a">hello@occam.ooo</List.Item>
             </List>
           </Grid.Column>

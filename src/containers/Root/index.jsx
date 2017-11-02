@@ -35,7 +35,7 @@ export default class Home extends Component {
 
           <CustomHeader {...this.props} />
           <div style={{ height: '100vh' }}>
-            <Parallax blur={9} bgImage={bg} strength={900} className="logo_main">
+            <Parallax blur={9} bgImage={bg} strength={400} className="logo_main">
               <Container
                 text
                 style={{
@@ -47,21 +47,23 @@ export default class Home extends Component {
                 }}
               >
 
-                <img src={logo} centered verticalAlign="bottom" size="medium" />
+                <Image src={logo} centered verticalAlign="bottom" size="medium" />
+                <Container fluid>
+                  <Header
+                    as="h1"
+                    textAlign="center"
+                    content="We develop MVPs*."
+                    inverted
+                    style={{
+                      fontSize: '3.7vh',
+                      fontWeight: '300',
+                      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                      borderRadius: '5px',
 
-                <Header
-                  as="h1"
-                  content="We develop MVPs*."
-                  inverted
-                  style={{
-                    fontSize: '3.7vh',
-                    fontWeight: '300',
-                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                    borderRadius: '5px',
-
-                    padding: '30px 50px'
-                  }}
-                />
+                      padding: '30px'
+                    }}
+                  />
+                </Container>
               </Container>
             </Parallax>
           </div>
@@ -73,16 +75,15 @@ export default class Home extends Component {
             <Grid.Row>
               <Grid.Column width={8}>
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Time and energy where it matters.
+                  We develop your product while you build your business.
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   When starting a company or
                   just launching the first version of a product,
                   you want to spend all your efforts where it matters.
                   Recruiting is usually an expensive and long task,
-                  so Occam.ooo has a team ready to get your product started
-                  as soon as possible. At the same time we develop your product,
-                  you build your business.
+                  so Occam.ooo has a team ready to get your product release
+                  as soon as possible.
                 </p>
               </Grid.Column>
               <Grid.Column textAlign="center" width={8}>
@@ -97,19 +98,16 @@ export default class Home extends Component {
         </Segment>
 
         <Segment style={{ padding: '0em 0em' }} vertical>
-          <Parallax blur={10} bgImage={bg2} strength={900} className="parallax-2-content">
+          <Parallax blur={10} bgImage={bg2} strength={400} className="parallax-2-content">
             <Grid container stackable className="parallax-2" verticalAlign="middle">
               <Grid.Row>
                 <Grid.Column>
                   <Header as="h3" style={{ fontSize: '2em' }}>
-                    Let{"'"}s get your product{"'"}s first version launched.
+                    Best coding practices for a swift product handover
                   </Header>
                   <p style={{ fontSize: '1.33em' }}>
-                    While you bootstrap a company or a team, we’re building your
-                    MVP. Occam.ooo is a software development company that
-                    assembles a team so that you can get your Minimum Viable
-                    Product out there in a snap.
-
+                    Whenever your product is ready and/or you have assembled your internal team,
+                    we will make sure the handover is as smooth as possible. We ensure the best coding practices are in place and use the most common programming language in the world: javascript.
                   </p>
                 </Grid.Column>
               </Grid.Row>
