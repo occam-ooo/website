@@ -159,7 +159,9 @@ const ThreeProjects = () => (
       <Grid.Row>
         <Grid.Column textAlign="center">
           <Link to={ROUTE_PROJECTS}>
-            <Button inverted size="huge">More projects</Button>
+            <Button inverted size="huge" onClick={() => window.scrollTo(0, 0)}>
+              More projects
+            </Button>
           </Link>
         </Grid.Column>
       </Grid.Row>
