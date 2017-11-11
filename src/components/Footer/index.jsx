@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Segment, Container, Grid, List, Header, Flag } from 'semantic-ui-react';
+import { Segment, Container, Grid, List, Header, Flag, Icon } from 'semantic-ui-react';
 import { ROUTE_ROOT, ROUTE_ABOUT, ROUTE_PROJECTS } from '../../services/navigation/routes';
 
 const Footer = () => (
@@ -18,7 +18,7 @@ const Footer = () => (
               <List.Item as="a"><Link to={ROUTE_ABOUT}>About</Link></List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={3}>
+          <Grid.Column width={4}>
             <Header inverted as="h4" content="Contact" />
             <List link inverted>
               <List.Item>Occam</List.Item>
@@ -29,7 +29,16 @@ const Footer = () => (
               <List.Item as="a">hello@occam.ooo</List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={7}>
+          <Grid.Column width={4}>
+            <Header as="h4" inverted>
+              Social
+            </Header>
+            <List link inverted>
+              <List.Item as="a"><a href="www.google.pt" /><Icon name="linkedin" /></List.Item>
+            </List>
+
+          </Grid.Column>
+          <Grid.Column width={4}>
             <Header as="h4" inverted>
               * What is a MVP?
             </Header>
@@ -40,6 +49,7 @@ const Footer = () => (
             </List>
 
           </Grid.Column>
+
         </Grid.Row>
       </Grid>
     </Container>
