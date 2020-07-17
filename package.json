@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^1.0.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "react": "latest",
     "react-dom": "latest",
     "react-parallax": "^1.4.4",
